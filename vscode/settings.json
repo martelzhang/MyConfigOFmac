@@ -1,0 +1,150 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ],
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xelatex->bibtex->xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex->bibtex->pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk"
+    ],
+    //pdf浏览器，如果用外部浏览器则用 "external"
+    "latex-workshop.view.pdf.viewer": "tab",
+    //设置 latex-workshop 的 PDF　预览程序，external　指的是外部程序,如果需要用外部程序，把上面那句注释掉，下面这段注释解除
+    // "latex-workshop.view.pdf.viewer": "external",
+    // "latex-workshop.view.pdf.ref.viewer": "external",
+    // "latex-workshop.view.pdf.external.viewer.command": "C:/Users/49163/AppData/Local/SumatraPDF/SumatraPDF.exe", // 注意修改SumatraPDF路径 如果复制过来路径是\记得改成/
+    // "latex-workshop.view.pdf.external.viewer.args": [
+    //     "-forward-search",
+    //     "%TEX%",
+    //     "%LINE%",
+    //     "-reuse-instance",
+    //     "-inverse-search",
+    //     "code.cmd -r -g \"%f\":%l",
+    //     "%PDF%"
+    // ],
+    // // 配置正向、反向搜索：.tex -> .pdf
+    // "latex-workshop.view.pdf.external.synctex.command": "C:/Users/49163/AppData/Local/SumatraPDF/SumatraPDF.exe", // 注意修改SumatraPDF路径
+    // "latex-workshop.view.pdf.external.synctex.args": [
+    //     // 正向搜索
+    //     "-forward-search",
+    //     "%TEX%",
+    //     "%LINE%",
+    //     "-reuse-instance",
+    //     // 反向搜索
+    //     "-inverse-search",
+    //     "\"D:/Program Files/Microsoft VS Code/Code.exe\" \"D:/Program Files/Microsoft VS Code/resources/app/out/cli.js\" -gr %f:%l", //注意修改VSCode路径
+    //     "%PDF%"
+    // ],
+    //自动编译tex
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    //显示内容菜单：（1）编译文件；（2）定位游标
+    "latex-workshop.showContextMenu": true,
+    //显示错误
+    "latex-workshop.message.error.show": true,
+    //显示警告
+    "latex-workshop.message.warning.show": true,
+    //从使用的包中自动补全命令和环境
+    "latex-workshop.intellisense.package.enabled": true,
+    //设置为never，为不清除辅助文件
+    "latex-workshop.latex.autoClean.run": "never",
+    //设置vscode编译tex文档时的默认编译链
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    // 用于反向同步的内部查看器的键绑定。ctrl/cmd +点击(默认)或双击
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+    "workbench.colorTheme": "Tokyo Night",
+    "editor.fontSize": 15,
+    "files.autoSave": "afterDelay",
+    "files.autoGuessEncoding": true,
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.mouseWheelZoom": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.wordWrap": "on",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.suggestSelection": "recentlyUsed",
+    "window.dialogStyle": "custom",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "workbench.iconTheme": "material-icon-theme",
+}
