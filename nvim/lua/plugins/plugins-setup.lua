@@ -85,7 +85,12 @@ local plugins = {
 --     config = function() return require("tmux").setup() end
 -- },
 
-
+{
+  "smjonas/inc-rename.nvim",
+  config = function()
+    require("inc_rename").setup()
+  end,
+},
 
 
 
