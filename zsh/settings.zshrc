@@ -137,9 +137,9 @@ function lark {
 
 export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin/python3:$PATH"
 
+alias py="python3"
 
-
-
+alias g++="g++ -std=c++17"
 
 
 
