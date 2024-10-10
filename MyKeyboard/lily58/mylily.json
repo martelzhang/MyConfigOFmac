@@ -30,7 +30,7 @@
       "KC_I",
       "KC_O",
       "KC_P",
-      "KC_MINS",
+      "KC_BSLS",
       "KC_LCTL",
       "KC_A",
       "KC_S",
@@ -64,7 +64,7 @@
       "KC_ENT",
       "MO(2)",
       "KC_BSPC",
-      "KC_PSCR"
+      "KC_MINS"
     ],
     [
       "KC_TRNS",
