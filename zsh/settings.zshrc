@@ -141,7 +141,7 @@ alias py="python3"
 
 alias g++="g++ -std=c++17"
 
-
+alias ls="lsd -l"
 
 
 
