@@ -143,6 +143,5 @@ alias g++="g++ -std=c++17"
 
 alias ls="lsd -l"
 
-
-
+alias matlab="/Applications/MATLAB.app/bin/matlab -nodesktop"
 
