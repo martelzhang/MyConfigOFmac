@@ -4,7 +4,6 @@ local keymap = vim.keymap
 
 keymap.set("n", ";", ":")
 keymap.set("c", "'", "wq<enter>")
-keymap.set("c", "t", "term")
 keymap.set("i", "jk", "<ESC>")
 keymap.set("i", "<C-h>", "<left>")
 keymap.set("i", "<C-j>", "<down>")
