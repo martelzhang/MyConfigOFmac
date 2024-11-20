@@ -117,10 +117,6 @@ function code {
     fi
 }
 
-function obs {
-    open -a "Obsidian"
-}
-
 function mail {
     open -a "NetEase Email Master"
 }
@@ -133,6 +129,9 @@ function lark {
     open -a "Lark"
 }
 
+function ztr {
+    open -a "Zotero"
+}
 # python path
 
 export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin/python3:$PATH"
